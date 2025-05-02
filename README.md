@@ -24,3 +24,11 @@
   - 例：正解が 1234、回答が 1354 の場合 → 2ヒット、1ブロー
 - 4ヒットになれば正解。ゲーム終了。
 - 目的は、なるべく少ない回数で正解を当てること。
+
+### 参考文献・関連リンク
+
+- Wikipedia: [ヒットアンドブロー](https://ja.wikipedia.org/wiki/ヒットアンドブロー)
+- 数当てゲームに関する戦略例（英語）: [Hit & Blow Solver Algorithm](https://en.wikipedia.org/wiki/Bulls_and_Cows)
+- ゲームの英語名称 "Bulls and Cows" に関する解説:  
+  [MathWorld - Bulls and Cows](https://mathworld.wolfram.com/BullsandCows.html)
+
