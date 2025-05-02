@@ -1,22 +1,24 @@
-# hit-and-blow-strategy
-数当てゲームhit&amp;blowの最小クリア戦略を目指したプログラムの作成
+# Hit-and-Blow-strategy
+数当てゲーム「Hit & Blow」の最小クリア戦略を目指したプログラムの作成
 
 ## プロジェクト概要
 
 このリポジトリは、数当てゲーム「Hit & Blow」において、  
-**最小手数で正解を導き出す戦略を目指したPythonプログラム**です。
+最小手数で正解を導き出す戦略を目指したPythonプログラムです。
 
-### 機能内容
+## 機能内容
 
-- **Hit & Blowゲームのロジックモデル**
+- Hit & Blowゲームのロジックモデル (game_model.py)
   - ランダムな4桁の数字（各桁重複なし）を生成し、プレイヤーの入力に対してHit数・Blow数を返す
 
-- **戦略モデル（最小手数戦略）**
+- 戦略モデル
   - 回答履歴と結果から、可能性を絞り込み、最小回数で正解に到達することを目指すアルゴリズムを実装
+  - ランダム戦略でゲームをプレイするモデル(random_strategy.py)
+  - 最小戦略を目指す戦略でゲームをプレイするモデル(choice_strategy.py)
 
-### ゲームのルール（概要）
+## ゲームのルール（概要）
 
-- 出題者は、**4桁の数字（各桁は0〜9で重複なし）**をランダムに選ぶ
+- 出題者は、4桁の数字（各桁は0〜9で重複なし） をランダムに選ぶ
 - 回答者は、その数字を推測して入力する
 - 回答ごとに、出題者は以下の2つのヒントを返す：
   - Hit（ヒット）：数字と位置の両方が正しい
@@ -25,10 +27,43 @@
 - 4ヒットになれば正解。ゲーム終了。
 - 目的は、なるべく少ない回数で正解を当てること。
 
+## 実行方法
+
+### 必要な環境
+
+- Python 3.10以上
+- ライブラリ：numpy（標準で入ってない場合はインストール）
+
+```bash
+
+### ランダム戦略で 1000 回試行して平均回数・分散を表示
+python random_strategy.py
+
+### 最小手数戦略で 100 回試行して平均回数・分散を表示
+python choice_strategy.py
+
+```
+
+## プログラムの実行結果
+
+| 戦略モデル        | 試行回数 | 平均質問回数 | 分散    |
+|------------------|----------|------------|---------|
+| random_strategy  | 1000回   | 4.89回     | 0.7919  |
+| choice_strategy  | 100回    | 4.65回     | 0.5075  |
+
+## 考察
+
+Choice_model は Random_model と比較して平均質問回数に大きな差は見られないが、  
+**分散においては明確な差があり、Choice_modelの方が安定して短手数で正解に到達している**ことがわかる。
+
+## 課題
+
+Choice_model に関して、現状のアルゴリズムは計算量が大きく時間がかかるため、  
+100 回の試行にとどまってしまった。  
+今後は、処理の軽量化を検討する必要がある。
+
 ### 参考文献・関連リンク
 
-- ルールの詳しい解説: [ヒットアンドブロー](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0226)
-- 数当てゲームに関する戦略例（英語）: [Hit & Blow Solver Algorithm](https://en.wikipedia.org/wiki/Bulls_and_Cows)
-- ゲームの英語名称 "Bulls and Cows" に関する解説:  
-  [MathWorld - Bulls and Cows](https://mathworld.wolfram.com/BullsandCows.html)
+- ゲームの英語名称 Bulls and Cows に関する解説  
+  [Wikipedia - Bulls and Cows](httpsen.wikipedia.orgwikiBulls_and_cows)
 
