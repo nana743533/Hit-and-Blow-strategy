@@ -35,7 +35,6 @@
 - ライブラリ：numpy（標準で入ってない場合はインストール）
 
 ```bash
-pip install numpy
 
 ### ランダム戦略で 1000 回試行して平均回数・分散を表示
 python random_strategy.py
