@@ -1,5 +1,5 @@
 # hit-and-blow-strategy
-数当てゲームhit&amp;blowの最小クリア戦略を目指したプログラムの作成
+数当てゲーム「Hit & Blow」の最小クリア戦略を目指したプログラムの作成
 
 ## プロジェクト概要
 
@@ -27,8 +27,6 @@
 
 ### 参考文献・関連リンク
 
-- ルールの詳しい解説: [ヒットアンドブロー](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0226)
-- 数当てゲームに関する戦略例（英語）: [Hit & Blow Solver Algorithm](https://en.wikipedia.org/wiki/Bulls_and_Cows)
 - ゲームの英語名称 "Bulls and Cows" に関する解説:  
-  [MathWorld - Bulls and Cows](https://mathworld.wolfram.com/BullsandCows.html)
+  [Wikipedia - Bulls and Cows](https://en.wikipedia.org/wiki/Bulls_and_cows)
 
