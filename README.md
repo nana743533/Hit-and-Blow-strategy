@@ -1,4 +1,4 @@
-# hit-and-blow-strategy
+# Hit-and-Blow-strategy
 数当てゲーム「Hit & Blow」の最小クリア戦略を目指したプログラムの作成
 
 ## プロジェクト概要
