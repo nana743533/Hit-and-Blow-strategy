@@ -27,7 +27,7 @@
 
 ### 参考文献・関連リンク
 
-- Wikipedia: [ヒットアンドブロー](https://ja.wikipedia.org/wiki/ヒットアンドブロー)
+- ルールの詳しい解説: [ヒットアンドブロー](https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=0226)
 - 数当てゲームに関する戦略例（英語）: [Hit & Blow Solver Algorithm](https://en.wikipedia.org/wiki/Bulls_and_Cows)
 - ゲームの英語名称 "Bulls and Cows" に関する解説:  
   [MathWorld - Bulls and Cows](https://mathworld.wolfram.com/BullsandCows.html)
